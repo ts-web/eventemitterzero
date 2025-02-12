@@ -1,0 +1,41 @@
+{
+  "name": "eventemitterzero",
+  "version": "1.0.0",
+  "description": "The smallest possible event emitter built on native JS APIs and providing modern DX",
+  "license": "MIT",
+  "author": "https://github.com/ts-web/",
+  "funding": "https://github.com/sponsors/ts-web",
+  "keywords": [
+    "event emitter",
+    "eventemitter",
+    "eventemitter3",
+    "on",
+    "emit",
+    "deregistration function"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ts-web/eventemitterzero.git"
+  },
+  "main": "dist/index.mjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.mts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.mts"
+    }
+  },
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup",
+    "prepack": "pnpm run build"
+  },
+  "devDependencies": {
+    "tsup": "^8",
+    "typescript": "^5"
+  },
+  "files": [
+    "dist"
+  ]
+}
